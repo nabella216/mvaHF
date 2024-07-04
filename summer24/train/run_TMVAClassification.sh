@@ -12,7 +12,7 @@ inputb=/afs/cern.ch/work/w/wangj/public/summer2024/filelist_May07__add_Dfinder-n
 
 # -- mva application sample
 inputms=(
-    /home/data/public/cmcginn/UPCSkims/May28_MC/mcfilelist_OfficialMCPthat5And8_GammaPlusGoing.root
+    /afs/cern.ch/work/w/wangj/public/summer2024/filelist_May07__add_Dfinder-ntDkpi_Dgen.root
 )
 outputmvadir=/home/data/public/wangj/UPC/mva_output_${trainlabel}/
 
@@ -30,9 +30,9 @@ cut=$cut" && DsvpvDisErr>1.e-5 && DsvpvDisErr_2D>1.e-5"
 
 cuts=$cut
 cutb=$cut
-cutb=$cutb" && HLT_HIUPC_SingleJet8_ZDC1nXOR_MaxPixelCluster50000_v2"
+# cutb=$cutb" && HLT_HIUPC_SingleJet8_ZDC1nXOR_MaxPixelCluster50000_v2"
 # cutb=$cutb" && HLT_HIUPC_SingleJet8_NotMBHF2AND_MaxPixelCluster50000_v2"
-cutb=$cutb" && ((sumPlus > 1100 && sumMinus <= 1000 && rapidityGapMinus) || (sumPlus <= 1100 && sumMinus > 1000 && rapidityGapPlus))"
+# cutb=$cutb" && ((sumPlus > 1100 && sumMinus <= 1000 && rapidityGapMinus) || (sumPlus <= 1100 && sumMinus > 1000 && rapidityGapPlus))"
 
 ##
 # algo="BDT,BDTG,LD,DNN_GPU"
